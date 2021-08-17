@@ -1,6 +1,41 @@
+/*$fonts:'Roboto', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;
+$fonts-logo: 'Shrikhand';
+*/
 body {
-  font-family: sans-serif;
   background-color: aqua;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto";
+}
+
+#logo {
+  height: 30px;
+}
+
+.filtre {
+  background-color: #F3F3F3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.filtre #filtre__position {
+  background-color: #DEDEDE;
+  border-top: 1px solid grey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.filtre #filtre__reservation {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
