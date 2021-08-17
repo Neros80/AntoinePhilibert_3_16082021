@@ -1,9 +1,6 @@
-body{
-    width: 33%;
+body {
+  font-family: sans-serif;
+  background-color: aqua;
 }
-#logo{
-    width: 130px;
-}
-.filtre{
-    background-color: gray;
-}
+
+/*# sourceMappingURL=style.css.map */
