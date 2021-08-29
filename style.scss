@@ -55,19 +55,20 @@ body{
         }
     }
 
-    #reser__button{
-        border-radius: 25px;
-        background: linear-gradient(#FF79DA, #9356DC);
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        width: 55%;
-        height: 45px;
-        font-size: 14px;
-        color: white;
-        border:none;
-        margin-top:1em;
-    }
+
+}
+#reser__button{
+    border-radius: 25px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 55%;
+    height: 45px;
+    font-size: 14px;
+    color: white;
+    border:none;
+    margin-top:1em;
 }
 
 nav{
@@ -178,3 +179,46 @@ footer{
 
 /*page à la francaise*/
 
+.img_acc{
+    width: 100%;
+}
+
+.container{
+    border-radius: 20px 20px 0 0;
+    background-color: #EFEDEC;
+    width: 100%;
+    margin-top: -25px;
+    display: flex;
+    flex-direction: column;
+    padding: 1px 0 60px 0;
+    
+    h1{
+        font-family: $fonts-logo;
+    }
+    .liste{
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin:0.5em 1em;
+        padding: 1em;
+        align-items: center;
+        span{
+            width: 100%;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        p{
+            margin-top:5px;
+            margin-bottom: 0;
+            font-size: 13px;
+
+        }
+        #prix{
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+    }
+}

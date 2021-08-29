@@ -51,7 +51,8 @@ body {
 .filtre #filtre__reser p {
   font-size: 17px;
 }
-.filtre #reser__button {
+
+#reser__button {
   border-radius: 25px;
   background: linear-gradient(#FF79DA, #9356DC);
   display: flex;
@@ -163,5 +164,45 @@ footer .fas {
 }
 
 /*page à la francaise*/
+.img_acc {
+  width: 100%;
+}
+
+.container {
+  border-radius: 20px 20px 0 0;
+  background-color: #EFEDEC;
+  width: 100%;
+  margin-top: -25px;
+  display: flex;
+  flex-direction: column;
+  padding: 1px 0 60px 0;
+}
+.container h1 {
+  font-family: "Shrikhand";
+}
+.container .liste {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.5em 1em;
+  padding: 1em;
+  align-items: center;
+}
+.container .liste span {
+  width: 100%;
+  font-weight: bold;
+  font-size: 15px;
+}
+.container .liste p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.container .liste #prix {
+  font-size: 15px;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=style.css.map */
