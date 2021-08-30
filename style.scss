@@ -126,6 +126,11 @@ section{
     display: flex;
     flex-direction: column;
     padding: 20px 0;
+    a{
+       text-decoration: none;
+       color: inherit;
+    }
+
 
     
     figure{
@@ -135,6 +140,7 @@ section{
         height: 200px;
         width: 90%;
         margin: 8px auto;
+
         img{
             height: 65%;
             width: 100%;
@@ -155,9 +161,9 @@ section{
             p{
                 font-size: 15px;
                 margin: 0;
+
             }
- 
-            
+           
         }
     }
 }
