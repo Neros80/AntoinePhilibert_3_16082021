@@ -8,15 +8,6 @@ body {
   margin: 0;
 }
 
-header {
-  align-items: center;
-  display: flex;
-}
-header a {
-  position: absolute;
-  left: 20px;
-}
-
 #logo {
   height: 30px;
   padding: 0.75em 0;
@@ -30,7 +21,6 @@ header a {
   text-align: center;
   width: 100%;
 }
-
 .filtre #filtre__position {
   background-color: #DEDEDE;
   border-top: 1px solid grey;
@@ -40,29 +30,24 @@ header a {
   align-items: center;
   padding: 0.2em 0;
 }
-
 .filtre #filtre__position span {
   font-size: 15px;
   padding: 0.5em;
 }
-
 .filtre #filtre__position #marque {
   font-size: 12px;
   padding: 0 0.5em;
 }
-
 .filtre #filtre__reser {
   font-size: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-
 .filtre #filtre__reser h1 {
   font-size: 24px;
   padding-top: 20px;
 }
-
 .filtre #filtre__reser p {
   font-size: 17px;
 }
@@ -85,20 +70,16 @@ nav {
   width: 100%;
   padding: 20px 0;
 }
-
 nav ul {
   list-style: none;
   padding: 0 4em;
 }
-
 nav ul :hover {
   background-color: #f1e5ff;
 }
-
 nav ul :hover > .fas {
   color: #9356DC;
 }
-
 nav ul li {
   padding: 1.5em;
   border-radius: 20px;
@@ -110,7 +91,6 @@ nav ul li {
   background-color: #efefef;
   font-size: 12px;
 }
-
 nav ul li span {
   background-color: #9356DC;
   padding: 3px 7px;
@@ -119,7 +99,6 @@ nav ul li span {
   color: white;
   font-size: 12px;
 }
-
 nav ul li .fas {
   padding: 0 20px;
   color: grey;
@@ -138,12 +117,10 @@ section {
   flex-direction: column;
   padding: 20px 0;
 }
-
 section a {
   text-decoration: none;
   color: inherit;
 }
-
 section figure {
   background-color: white;
   border-radius: 15px;
@@ -152,7 +129,6 @@ section figure {
   width: 90%;
   margin: 8px auto;
 }
-
 section figure img {
   height: 65%;
   width: 100%;
@@ -160,7 +136,6 @@ section figure img {
   object-position: center;
   border-radius: 15px 15px 0 0;
 }
-
 section figure figcaption {
   font-size: 0.5em;
   display: flex;
@@ -168,12 +143,10 @@ section figure figcaption {
   justify-content: space-between;
   padding: 1em;
 }
-
 section figure figcaption h3 {
   font-size: 15px;
   margin: 5px 0;
 }
-
 section figure figcaption p {
   font-size: 15px;
   margin: 0;
@@ -184,15 +157,12 @@ footer {
   width: 100%;
   color: white;
 }
-
 footer #titre_credit {
   font-family: "Shrikhand";
 }
-
 footer ul {
   list-style: none;
 }
-
 footer .fas {
   width: 25px;
 }
@@ -211,12 +181,9 @@ footer .fas {
   flex-direction: column;
   padding: 1px 0 60px 0;
 }
-
 .container h1 {
   font-family: "Shrikhand";
-  padding: 0 0.4em;
 }
-
 .container .liste {
   background-color: white;
   border-radius: 15px;
@@ -227,25 +194,19 @@ footer .fas {
   padding: 1em;
   align-items: center;
 }
-
 .container .liste span {
   width: 100%;
   font-weight: bold;
   font-size: 15px;
 }
-
 .container .liste p {
   margin-top: 5px;
   margin-bottom: 0;
   font-size: 13px;
 }
-
 .container .liste #prix {
   font-size: 15px;
   font-weight: bold;
 }
-
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */
