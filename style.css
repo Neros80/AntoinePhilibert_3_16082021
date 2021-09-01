@@ -8,6 +8,16 @@ body {
   margin: 0;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
+header a {
+  position: absolute;
+  left: 20px;
+  color: black;
+}
+
 #logo {
   height: 30px;
   padding: 0.75em 0;
@@ -105,9 +115,7 @@ nav ul li .fas {
 }
 
 h2 {
-  padding: 1em;
-  font-size: 1em;
-  margin: 0;
+  padding: 0 1em;
 }
 
 section {
@@ -142,6 +150,21 @@ section figure figcaption {
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
+}
+section figure figcaption .fav {
+  position: absolute;
+  top: 155px;
+  right: 35px;
+  font-size: 20px;
+}
+section figure figcaption .fav_ok {
+  position: absolute;
+  top: 155px;
+  right: 35px;
+  font-size: 20px;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 section figure figcaption h3 {
   font-size: 15px;
@@ -183,6 +206,14 @@ footer .fas {
 }
 .container h1 {
   font-family: "Shrikhand";
+  padding: 0 0.5em;
+}
+.container h2 {
+  padding: 5px 0;
+  width: 40px;
+  font-size: 1em;
+  margin: 5px 1em;
+  border-bottom: 3px solid #99E2D0;
 }
 .container .liste {
   background-color: white;

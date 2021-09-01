@@ -9,6 +9,15 @@ body{
    font-family: $fonts;
    margin: 0;
 }
+header{
+  display: flex;
+  align-items: center;
+  a{
+    position: absolute;
+    left: 20px;
+    color: black;
+  }
+}
 
 #logo{
     height: 30px;
@@ -115,9 +124,10 @@ nav{
 }
 
 h2{
-    padding: 1em;
-    font-size: 1em;
-    margin: 0;
+    padding: 0 1em;
+
+
+
 }
 
 section{
@@ -154,6 +164,21 @@ section{
             flex-direction: column;
             justify-content: space-between;
             padding: 1em;
+            .fav{
+              position: absolute;
+              top: 155px;
+              right: 35px;
+              font-size: 20px;
+            }
+            .fav_ok{
+              position: absolute;
+              top: 155px;
+              right: 35px;
+              font-size: 20px;
+              background: -webkit-linear-gradient(#FF79DA, #9356DC);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
             h3{
                 font-size: 15px;
                 margin: 5px 0;
@@ -200,7 +225,15 @@ footer{
     
     h1{
         font-family: $fonts-logo;
+        padding: 0 0.5em;
     }
+    h2{
+      padding: 5px 0;
+      width: 40px;
+      font-size: 1em;
+      margin: 5px 1em;
+      border-bottom: 3px solid #99E2D0;
+  }
     .liste{
         background-color: white;
         border-radius: 15px;
