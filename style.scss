@@ -7,6 +7,14 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
+header{
+  align-items: center;
+  display: flex;
+  a{
+    position: absolute;
+    left: 20px
+  }
+}
 
 #logo {
   height: 30px;

@@ -8,6 +8,15 @@ body {
   margin: 0;
 }
 
+header {
+  align-items: center;
+  display: flex;
+}
+header a {
+  position: absolute;
+  left: 20px;
+}
+
 #logo {
   height: 30px;
   padding: 0.75em 0;
