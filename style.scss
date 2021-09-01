@@ -1,230 +1,241 @@
-
-$fonts:'Roboto', sans-serif;
-$fonts-logo: 'Shrikhand';
-body{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   font-family: $fonts;
-   margin: 0;
+@charset "UTF-8";
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
-#logo{
-    height: 30px;
-    padding: 0.75em 0;
+#logo {
+  height: 30px;
+  padding: 0.75em 0;
 }
 
-.filtre{
-    background-color: #F3F3F3;
-    display: flex;
-    flex-direction: column;
-    height: 340px;
-    text-align: center;
-    width: 100%;
-
-    #filtre__position{
-        background-color: #DEDEDE;
-        border-top: 1px solid grey;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.2em 0;
-        span{
-            font-size: 15px;
-            padding: 0.5em;
-        }
-        #marque{
-            font-size: 12px;
-            padding: 0 0.5em;
-        }
-    }
-
-    #filtre__reser{
-        font-size: 10px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        h1{
-            font-size: 24px;
-            padding-top: 20px;
-        }
-        p{
-            font-size: 17px;
-        }
-    }
-
-
-}
-#reser__button{
-    border-radius: 25px;
-    background: linear-gradient(#FF79DA, #9356DC);
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    width: 55%;
-    height: 45px;
-    font-size: 14px;
-    color: white;
-    border:none;
-    margin-top:1em;
+.filtre {
+  background-color: #F3F3F3;
+  display: flex;
+  flex-direction: column;
+  height: 340px;
+  text-align: center;
+  width: 100%;
 }
 
-nav{
-    width: 100%;
-    padding: 20px 0;
-    ul{
-    list-style: none;
-    padding: 0 4em;
-    :hover{
-        background-color: #f1e5ff;
-        >.fas{ 
-            color: #9356DC; 
-        } 
-    }
-
-        li{
-            padding: 1.5em;
-            border-radius: 20px;
-            margin: 1.5em 0;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            box-shadow:4px 3px 7px #d8d7d7;
-            background-color: #efefef;
-            font-size: 12px;
-
-            
-            span{
-                background-color: #9356DC;
-                padding: 3px 7px;
-                border-radius: 20px;
-                margin-left:-30px;
-                color: white;
-                font-size: 12px;
-            }
-            .fas{
-                padding: 0 20px;
-                color: grey;
-            }
- 
-        }
-
-    }
+.filtre #filtre__position {
+  background-color: #DEDEDE;
+  border-top: 1px solid grey;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2em 0;
 }
 
-h2{
-    padding: 1em;
-    font-size: 1em;
-    margin: 0;
+.filtre #filtre__position span {
+  font-size: 15px;
+  padding: 0.5em;
 }
 
-section{
-    background-color: #f9f4f4;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    a{
-       text-decoration: none;
-       color: inherit;
-    }
-
-
-    
-    figure{
-        background-color: white;
-        border-radius: 15px;
-        filter: drop-shadow(0 0 0.75rem rgb(184, 184, 184));
-        height: 200px;
-        width: 90%;
-        margin: 8px auto;
-
-        img{
-            height: 65%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 15px 15px 0 0;
-        }
-        figcaption{
-            font-size: 0.5em;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding: 1em;
-            h3{
-                font-size: 15px;
-                margin: 5px 0;
-            }
-            p{
-                font-size: 15px;
-                margin: 0;
-
-            }
-           
-        }
-    }
+.filtre #filtre__position #marque {
+  font-size: 12px;
+  padding: 0 0.5em;
 }
 
-footer{
-    background-color: #484848;
-    width: 100%;
-    color:white;
-    #titre_credit{
-        font-family: $fonts-logo;
-    }
-    ul{
-        list-style: none;
-    }
-    .fas{
-    width: 25px;
-    }
+.filtre #filtre__reser {
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.filtre #filtre__reser h1 {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.filtre #filtre__reser p {
+  font-size: 17px;
+}
+
+#reser__button {
+  border-radius: 25px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 55%;
+  height: 45px;
+  font-size: 14px;
+  color: white;
+  border: none;
+  margin-top: 1em;
+}
+
+nav {
+  width: 100%;
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0 4em;
+}
+
+nav ul :hover {
+  background-color: #f1e5ff;
+}
+
+nav ul :hover > .fas {
+  color: #9356DC;
+}
+
+nav ul li {
+  padding: 1.5em;
+  border-radius: 20px;
+  margin: 1.5em 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 3px 7px #d8d7d7;
+  background-color: #efefef;
+  font-size: 12px;
+}
+
+nav ul li span {
+  background-color: #9356DC;
+  padding: 3px 7px;
+  border-radius: 20px;
+  margin-left: -30px;
+  color: white;
+  font-size: 12px;
+}
+
+nav ul li .fas {
+  padding: 0 20px;
+  color: grey;
+}
+
+h2 {
+  padding: 1em;
+  font-size: 1em;
+  margin: 0;
+}
+
+section {
+  background-color: #f9f4f4;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+section a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section figure {
+  background-color: white;
+  border-radius: 15px;
+  filter: drop-shadow(0 0 0.75rem #b8b8b8);
+  height: 200px;
+  width: 90%;
+  margin: 8px auto;
+}
+
+section figure img {
+  height: 65%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+section figure figcaption {
+  font-size: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+section figure figcaption h3 {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+section figure figcaption p {
+  font-size: 15px;
+  margin: 0;
+}
+
+footer {
+  background-color: #484848;
+  width: 100%;
+  color: white;
+}
+
+footer #titre_credit {
+  font-family: "Shrikhand";
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer .fas {
+  width: 25px;
 }
 
 /*page à la francaise*/
-
-.img_acc{
-    width: 100%;
+.img_acc {
+  width: 100%;
 }
 
-.container{
-    border-radius: 20px 20px 0 0;
-    background-color: #EFEDEC;
-    width: 100%;
-    margin-top: -25px;
-    display: flex;
-    flex-direction: column;
-    padding: 1px 0 60px 0;
-    
-    h1{
-        font-family: $fonts-logo;
-    }
-    .liste{
-        background-color: white;
-        border-radius: 15px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin:0.5em 1em;
-        padding: 1em;
-        align-items: center;
-        span{
-            width: 100%;
-            font-weight: bold;
-            font-size: 15px;
-        }
-        p{
-            margin-top:5px;
-            margin-bottom: 0;
-            font-size: 13px;
-
-        }
-        #prix{
-            font-size: 15px;
-            font-weight: bold;
-        }
-
-    }
+.container {
+  border-radius: 20px 20px 0 0;
+  background-color: #EFEDEC;
+  width: 100%;
+  margin-top: -25px;
+  display: flex;
+  flex-direction: column;
+  padding: 1px 0 60px 0;
 }
+
+.container h1 {
+  font-family: "Shrikhand";
+  padding: 0 0.4em;
+}
+
+.container .liste {
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0.5em 1em;
+  padding: 1em;
+  align-items: center;
+}
+
+.container .liste span {
+  width: 100%;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.container .liste p {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.container .liste #prix {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.scss.map */
