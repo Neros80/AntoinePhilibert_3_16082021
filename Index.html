@@ -18,31 +18,31 @@
         <img id="logo" src="images/logo/ohmyfood.png">
     </header>
     <div class="filtre">
-        <div id="filtre__position">
-            <i id="marque" class="fas fa-map-marker-alt"></i>
+        <div class="filtre__position">
+            <i class="filtre__position--marque fas fa-map-marker-alt"></i>
             <span>Paris, Belleville</span>
         </div>
-        <div id="filtre__reser">
+        <div class="filtre__reser">
             <h1>Reservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, selectionnés par nos soins.</p>
-            <input id="reser__button" type="button" value="Explorer nos restaurants" />
+            <input class="filtre__reser--btn" type="button" value="Explorer nos restaurants" />
         </div>
     </div>
 
-    <nav>
-        <h2>Fonctionnement</h2>
-        <ul>
-            <li>
+    <nav class="nav">
+        <h2 class="nav__title">Fonctionnement</h2>
+        <ul class="nav__list">
+            <li class="nav__list--elements">
                 <span>1</span>
                 <i class="fas fa-mobile-alt"></i>
                 Choisissez un restaurants
             </li>
-            <li>
+            <li class="nav__list--elements">
                 <span>2</span>
                 <i class="fas fa-list"></i>
                 Comparez votre menu
             </li>
-            <li>
+            <li class="nav__list--elements">
                 <span>3</span>
                 <i class="fas fa-store"></i>
                 Dégustez au restaurant
@@ -50,57 +50,63 @@
         </ul>
     </nav>
 
-    <section>
-        <h2>Restaurants</h2>
-        <figure>
+    <section class="container">
+        <h2 class="container__title">Restaurants</h2>
+        <figure class="container__block">
             <a href="la_palette_du_gout.html">
             <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
-            <figcaption>
-                <div class="text">
-                    <h3>la palette du goût</h3>
-                    <p>Ménilmontant</p>
-                </div>
-                <i class="fav far fa-heart"></i>
-                <i class="fav_ok fas fa-heart"></i>
-            </figcaption>
+                <figcaption class="text">
+                        <h3 class="text__title">la palette du goût</h3>
+                        <p class="text__soustext">Ménilmontant</p>
+                            <div class="text__btn">
+                                <i class="text__btn--base far fa-heart"></i>
+                                <i class="text__btn--fav fas fa-heart"></i>
+                            </div>
+                </figcaption>
             </a>
         </figure>
-        <figure>
+        <figure class="container__block">
             <a href="la_note_enchantee.html">
                 <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
                 <figcaption>
                     <div class="text">
-                        <h3>La note enchantée</h3>
-                        <p>Charonne</p>
+                        <h3 class="text__title">La note enchantée</h3>
+                        <p class="text__soustext">Charonne</p>
                     </div>
-                    <i class="fav far fa-heart"></i>
-                    <i class="fav_ok fas fa-heart"></i>
+                    <div class="text__btn">
+                        <i class="text__btn--base far fa-heart"></i>
+                        <i class="text__btn--fav fas fa-heart"></i>
+                    </div>
                 </figcaption>
             </a>
         </figure>
-        <figure>
+        <figure class="container__block">
             <a href="A_la_francaise.html">
                 <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
                 <figcaption>
                     <div class="text">
-                        <h3>A la française</h3>
-                        <p>Cité Rouge</p>
+                        <h3 class="text__title">A la française</h3>
+                        <p class="text__soustext">Cité Rouge</p>
                     </div>
-                    <i class="fav far fa-heart"></i>
-                    <i class="fav_ok fas fa-heart"></i>
+                    <div class="text__btn">
+                        <i class="text__btn--base far fa-heart"></i>
+                        <i class="text__btn--fav fas fa-heart"></i>
+                    </div>
                 </figcaption>
             </a>
         </figure>
-        <figure>
+        <figure class="container__block">
             <a href="le_delice_des_sens.html">
                 <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
                 <figcaption>
                     <div class="text">
-                        <h3>Le délice des sens</h3>
-                        <p>Folie-Méricourt</p>
+                        <h3 class="text__title">Le délice des sens</h3>
+                        <p class="text__soustext">Folie-Méricourt</p>
                     </div>
-                    <i class="fav far fa-heart"></i>
-                    <i class="fav_ok fas fa-heart"></i>
+                    <div class="text__btn">
+                        <i class="text__btn--base far fa-heart"></i>
+                        <i class="text__btn--fav fas fa-heart"></i>
+                    </div>
                 </figcaption>
             </a>
         </figure>

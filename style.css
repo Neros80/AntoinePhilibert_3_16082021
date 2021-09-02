@@ -31,7 +31,7 @@ header a {
   text-align: center;
   width: 100%;
 }
-.filtre #filtre__position {
+.filtre__position {
   background-color: #DEDEDE;
   border-top: 1px solid grey;
   width: 100%;
@@ -40,29 +40,28 @@ header a {
   align-items: center;
   padding: 0.2em 0;
 }
-.filtre #filtre__position span {
+.filtre__position span {
   font-size: 15px;
   padding: 0.5em;
 }
-.filtre #filtre__position #marque {
+.filtre__position--marque {
   font-size: 12px;
   padding: 0 0.5em;
 }
-.filtre #filtre__reser {
+.filtre__reser {
   font-size: 10px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.filtre #filtre__reser h1 {
+.filtre__reser h1 {
   font-size: 24px;
   padding-top: 20px;
 }
-.filtre #filtre__reser p {
+.filtre__reser p {
   font-size: 17px;
 }
-
-#reser__button {
+.filtre__reser--btn {
   border-radius: 25px;
   background: linear-gradient(#FF79DA, #9356DC);
   display: flex;
@@ -76,21 +75,24 @@ header a {
   margin-top: 1em;
 }
 
-nav {
+.nav {
   width: 100%;
   padding: 20px 0;
 }
-nav ul {
+.nav__list {
   list-style: none;
   padding: 0 4em;
 }
-nav ul :hover {
+.nav__list :hover {
   background-color: #f1e5ff;
 }
-nav ul :hover > .fas {
+.nav__list :hover > .fas {
   color: #9356DC;
 }
-nav ul li {
+.nav__list :hover > span {
+  background-color: #9356DC;
+}
+.nav__list--elements {
   padding: 1.5em;
   border-radius: 20px;
   margin: 1.5em 0;
@@ -101,7 +103,7 @@ nav ul li {
   background-color: #efefef;
   font-size: 12px;
 }
-nav ul li span {
+.nav__list--elements span {
   background-color: #9356DC;
   padding: 3px 7px;
   border-radius: 20px;
@@ -109,27 +111,22 @@ nav ul li span {
   color: white;
   font-size: 12px;
 }
-nav ul li .fas {
+.nav__list--elements .fas {
   padding: 0 20px;
   color: grey;
 }
 
-h2 {
-  padding: 0 1em;
-}
-
-section {
+.container {
   background-color: #f9f4f4;
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px 0;
 }
-section a {
-  text-decoration: none;
-  color: inherit;
+.container__title {
+  padding: 0 1em;
 }
-section figure {
+.container__block {
   background-color: white;
   border-radius: 15px;
   filter: drop-shadow(0 0 0.75rem #b8b8b8);
@@ -137,42 +134,50 @@ section figure {
   width: 90%;
   margin: 8px auto;
 }
-section figure img {
+.container__block a {
+  text-decoration: none;
+  color: inherit;
+}
+.container__block img {
   height: 65%;
   width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 15px 15px 0 0;
 }
-section figure figcaption {
+.container__block .text {
   font-size: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 1em;
 }
-section figure figcaption .fav {
-  position: absolute;
-  top: 155px;
-  right: 35px;
-  font-size: 20px;
-}
-section figure figcaption .fav_ok {
-  position: absolute;
-  top: 155px;
-  right: 35px;
-  font-size: 20px;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-section figure figcaption h3 {
+.container__block .text__title {
   font-size: 15px;
   margin: 5px 0;
 }
-section figure figcaption p {
+.container__block .text__soustext {
   font-size: 15px;
   margin: 0;
+}
+.container__block .text__btn--base {
+  position: absolute;
+  top: 155px;
+  right: 35px;
+  font-size: 20px;
+  z-index: 0;
+}
+.container__block .text__btn--fav {
+  position: absolute;
+  top: 155px;
+  right: 35px;
+  font-size: 20px;
+  z-index: 1;
+  opacity: 0;
+}
+.container__block .text__btn:hover--fav {
+  opacity: 1;
+  z-index: -1;
 }
 
 footer {
