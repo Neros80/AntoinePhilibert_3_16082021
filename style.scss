@@ -11,6 +11,17 @@ $fonts-logo: 'Shrikhand';
         opacity: 1;
     }
 }
+
+@keyframes slideRight{
+    from{
+        width: 0;
+        opacity: 0;
+    }
+    to{
+        width: 25%;
+        opacity: 1;
+ }
+}
 body{
    display: flex;
    align-items: center;
@@ -257,16 +268,34 @@ footer{
       margin: 5px 1em;
       border-bottom: 3px solid #99E2D0;
   }
-    .categorie__liste{
+}
+.categorie__liste{
         background-color: white;
         border-radius: 15px;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: space-between;
         margin:0.5em 1em;
-        padding: 1em;
         align-items: center;
+        height: 70px;
         animation: slideDown 4s;
+        :hover > &--box{
+            animation: slideRight 1s ease-in-out;
+        }
+
+        &--content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            padding: 1em;
+        }
+        &--box{
+            overflow: hidden;
+            background-color: #99E2D0;
+            height: 70px;
+            border-radius: 0 15px 15px 0;
+        }
 
         span{
             width: 100%;
@@ -313,7 +342,6 @@ footer{
         animation: slideDown 3s;
     }
 
-}
 
 @media screen and( min-width: 1280px){
     body{

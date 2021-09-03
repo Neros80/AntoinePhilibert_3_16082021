@@ -8,6 +8,16 @@
     opacity: 1;
   }
 }
+@keyframes slideRight {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 25%;
+    opacity: 1;
+  }
+}
 body {
   display: flex;
   align-items: center;
@@ -244,56 +254,82 @@ footer .fas {
   margin: 5px 1em;
   border-bottom: 3px solid #99E2D0;
 }
-.page .categorie__liste {
+
+.categorie__liste {
   background-color: white;
   border-radius: 15px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   margin: 0.5em 1em;
-  padding: 1em;
   align-items: center;
+  height: 70px;
   animation: slideDown 4s;
 }
-.page .categorie__liste span {
+:hover > .categorie__liste--box {
+  animation: slideRight 1s ease-in-out;
+}
+.categorie__liste--content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1em;
+}
+.categorie__liste--box {
+  overflow: hidden;
+  background-color: #99E2D0;
+  height: 70px;
+  border-radius: 0 15px 15px 0;
+}
+.categorie__liste span {
   width: 100%;
   font-weight: bold;
   font-size: 15px;
 }
-.page .categorie__liste p {
+.categorie__liste p {
   margin-top: 5px;
   margin-bottom: 0;
   font-size: 13px;
 }
-.page .categorie__liste #prix {
+.categorie__liste #prix {
   font-size: 15px;
   font-weight: bold;
 }
-.page .categorie__liste:nth-child(3) {
+
+.categorie__liste:nth-child(3) {
   animation: slideDown 4s;
 }
-.page .categorie__liste:nth-child(4) {
+
+.categorie__liste:nth-child(4) {
   animation: slideDown 3s;
 }
-.page .categorie__liste:nth-child(5) {
+
+.categorie__liste:nth-child(5) {
   animation: slideDown 2s;
 }
-.page .categorie__liste:nth-child(7) {
+
+.categorie__liste:nth-child(7) {
   animation: slideDown 4s;
 }
-.page .categorie__liste:nth-child(8) {
+
+.categorie__liste:nth-child(8) {
   animation: slideDown 4s;
 }
-.page .categorie__liste:nth-child(9) {
+
+.categorie__liste:nth-child(9) {
   animation: slideDown 3s;
 }
-.page .categorie__liste:nth-child(11) {
+
+.categorie__liste:nth-child(11) {
   animation: slideDown 4s;
 }
-.page .categorie__liste:nth-child(12) {
+
+.categorie__liste:nth-child(12) {
   animation: slideDown 4s;
 }
-.page .categorie__liste:nth-child(13) {
+
+.categorie__liste:nth-child(13) {
   animation: slideDown 3s;
 }
 
