@@ -15,10 +15,18 @@ $fonts-logo: 'Shrikhand';
 @keyframes slideRight{
     from{
         width: 0;
-        opacity: 0;
     }
     to{
         width: 25%;
+ }
+}
+@keyframes checking{
+    from{
+         transform: rotate(-180deg);
+         opacity: 0;
+    }
+    to{
+        transform: rotate(0);
         opacity: 1;
  }
 }
@@ -279,9 +287,14 @@ footer{
         align-items: center;
         height: 70px;
         animation: slideDown 4s;
-        :hover > &--box{
+        &:hover> &--box{
+            display: block;
             animation: slideRight 1s ease-in-out;
-        }
+            animation-fill-mode: forwards;
+            }
+        &:hover &--box--check{
+            animation: checking 1s ease-in-out;
+            }    
 
         &--content{
             display: flex;
@@ -295,6 +308,15 @@ footer{
             background-color: #99E2D0;
             height: 70px;
             border-radius: 0 15px 15px 0;
+            display: none;
+            &--check{
+                color: white;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                padding: 0.5em 0.5em;
+                font-size: 35px;
+            }
         }
 
         span{
