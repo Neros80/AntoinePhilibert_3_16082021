@@ -163,6 +163,10 @@ header{
     display: flex;
     flex-direction: column;
     padding-bottom: 4em;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
     span{
         background-color: #99E2D0;
         color: green;
@@ -183,10 +187,6 @@ header{
         height: 200px;
         width: 90%;
         margin: 8px auto;
-        a{
-            text-decoration: none;
-            color: inherit;
-        }
         img{
             height: 65%;
             width: 100%;
@@ -338,7 +338,7 @@ footer{
             margin-bottom: 0;
             font-size: 13px;
         }
-        #prix{
+        .prix{
             font-size: 15px;
             font-weight: bold;
             padding: 1em;

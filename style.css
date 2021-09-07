@@ -156,6 +156,10 @@ header a {
   flex-direction: column;
   padding-bottom: 4em;
 }
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
 .container span {
   background-color: #99E2D0;
   color: green;
@@ -175,10 +179,6 @@ header a {
   height: 200px;
   width: 90%;
   margin: 8px auto;
-}
-.container__block a {
-  text-decoration: none;
-  color: inherit;
 }
 .container__block img {
   height: 65%;
@@ -322,7 +322,7 @@ footer .fas {
   margin-bottom: 0;
   font-size: 13px;
 }
-.categorie__liste #prix {
+.categorie__liste .prix {
   font-size: 15px;
   font-weight: bold;
   padding: 1em;
