@@ -13,7 +13,7 @@
     width: 0;
   }
   to {
-    width: 25%;
+    width: 40%;
   }
 }
 @keyframes checking {
@@ -156,6 +156,15 @@ header a {
   flex-direction: column;
   padding-bottom: 4em;
 }
+.container span {
+  background-color: #99E2D0;
+  color: green;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  padding: 0.4em 1em;
+  border-radius: 4px;
+}
 .container__title {
   padding: 1em;
 }
@@ -277,21 +286,19 @@ footer .fas {
 }
 .categorie__liste:hover > .categorie__liste--box {
   display: block;
-  animation: slideRight 1s ease-in-out;
+  animation: slideRight 750ms ease-in-out;
   animation-fill-mode: forwards;
 }
 .categorie__liste:hover .categorie__liste--box--check {
-  animation: checking 1s ease-in-out;
+  animation: checking 750ms ease-in-out;
 }
 .categorie__liste--content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
   padding: 1em;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .categorie__liste--box {
-  overflow: hidden;
   background-color: #99E2D0;
   height: 70px;
   border-radius: 0 15px 15px 0;
@@ -318,6 +325,7 @@ footer .fas {
 .categorie__liste #prix {
   font-size: 15px;
   font-weight: bold;
+  padding: 1em;
 }
 
 .categorie__liste:nth-child(3) {
