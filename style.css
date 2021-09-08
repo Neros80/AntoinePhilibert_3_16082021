@@ -335,11 +335,11 @@ footer .fas {
 }
 .categorie__liste:hover > .categorie__liste--box {
   display: block;
-  animation: slideRight 750ms ease-in-out;
+  animation: slideRight 500ms ease-in-out;
   animation-fill-mode: forwards;
 }
 .categorie__liste:hover .categorie__liste--box--check {
-  animation: checking 750ms ease-in-out;
+  animation: checking 600ms ease-in-out;
 }
 .categorie__liste--content {
   width: 100%;

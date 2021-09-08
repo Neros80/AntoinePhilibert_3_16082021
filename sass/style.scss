@@ -301,11 +301,11 @@ footer{
         animation: slideDown 4s;
         &:hover> &--box{
             display: block;
-            animation: slideRight 750ms ease-in-out;
+            animation: slideRight 500ms ease-in-out;
             animation-fill-mode: forwards;
             }
         &:hover &--box--check{
-            animation: checking 750ms ease-in-out;
+            animation: checking 600ms ease-in-out;
             }    
 
         &--content{
