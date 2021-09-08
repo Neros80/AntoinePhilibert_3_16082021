@@ -294,7 +294,6 @@ footer{
         background-color: white;
         border-radius: 15px;
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
         margin:0.5em 1em;
         align-items: center;
@@ -440,5 +439,15 @@ footer{
             }
         }
 
+    }
+    .page{
+        display: flex;
+        &__liste{
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .categorie__liste{
+            width: 30%;
+        }
     }
 }

@@ -327,7 +327,6 @@ footer .fas {
   background-color: white;
   border-radius: 15px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin: 0.5em 1em;
   align-items: center;
@@ -475,6 +474,17 @@ footer .fas {
     position: absolute;
     top: 40px;
     right: 20px;
+  }
+
+  .page {
+    display: flex;
+  }
+  .page__liste {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .page .categorie__liste {
+    width: 30%;
   }
 }
 
