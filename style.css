@@ -1,4 +1,4 @@
-/*@import ".base/Utils/variables";*/
+/*Utils*/
 @keyframes slideDown {
   from {
     transform: translateY(-50px);
@@ -27,6 +27,26 @@
     opacity: 1;
   }
 }
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 50%;
+  }
+}
+@keyframes loading_bg {
+  0% {
+    width: 100%;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
 body {
   display: flex;
   align-items: center;
@@ -36,6 +56,31 @@ body {
   margin: 0;
   max-width: 1120px;
   min-width: 350px;
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  animation: loading_bg 1s ease-out;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  z-index: 1;
+}
+.loading__bar {
+  border-bottom: 10px solid #9656DC;
+  border-top: 10px solid #9656DC;
+  border-left: 10px solid #99E2D0;
+  border-right: 10px solid #99E2D0;
+  width: 80px;
+  height: 80px;
+  animation: loading 2s ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 header {
@@ -93,7 +138,7 @@ header a {
 }
 .filtre__reser--btn {
   border-radius: 25px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9656DC);
   display: flex;
   justify-content: center;
   margin: auto;
@@ -104,6 +149,9 @@ header a {
   border: none;
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.filtre__reser--btn:hover {
+  opacity: 0.8;
 }
 
 .nav {
@@ -121,10 +169,10 @@ header a {
   background-color: #f1e5ff;
 }
 .nav__list :hover > .fas {
-  color: #9356DC;
+  color: #9656DC;
 }
 .nav__list :hover > span {
-  background-color: #9356DC;
+  background-color: #9656DC;
 }
 .nav__list--elements {
   padding: 1.5em;
@@ -138,7 +186,7 @@ header a {
   font-size: 12px;
 }
 .nav__list--elements span {
-  background-color: #9356DC;
+  background-color: #9656DC;
   padding: 3px 7px;
   border-radius: 20px;
   margin-left: -30px;
@@ -217,7 +265,8 @@ header a {
   font-size: 20px;
   z-index: -1;
   opacity: 0;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  background: -webkit-linear-gradient(#FF79DA, #9656DC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -296,6 +345,11 @@ footer .fas {
 .categorie__liste--content {
   width: 100%;
   padding: 1em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.categorie__liste--content > p {
   text-overflow: ellipsis;
   overflow: hidden;
 }

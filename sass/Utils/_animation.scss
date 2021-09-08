@@ -1,0 +1,51 @@
+@keyframes slideDown {
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight{
+    from{
+        width: 0;
+    }
+    to{
+        width: 40%;
+ }
+}
+@keyframes checking{
+    from{
+         transform: rotate(-180deg);
+         opacity: 0;
+    }
+    to{
+        transform: rotate(0);
+        opacity: 1;
+ }
+}
+@keyframes loading
+{
+    0%{ 
+        transform: rotate(0deg); 
+        border-radius: 0;
+    }
+    100%{ 
+        transform: rotate(360deg);
+        border-radius: 50%;
+    }
+}
+@keyframes loading_bg
+{
+    0%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 0;
+        opacity: 0;
+    }
+}
