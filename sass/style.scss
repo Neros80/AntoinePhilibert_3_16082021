@@ -1,6 +1,7 @@
 @charset "UTF-8";
-$fonts:'Roboto', sans-serif;
-$fonts-logo: 'Shrikhand';
+/*$fonts:'Roboto', sans-serif;
+$fonts-logo: 'Shrikhand';*/
+@import './Utils/variables';
 @keyframes slideDown {
     from{
         transform: translateY(-50px);

@@ -1,3 +1,4 @@
+/*@import ".base/Utils/variables";*/
 @keyframes slideDown {
   from {
     transform: translateY(-50px);
