@@ -170,16 +170,6 @@ header{
         text-decoration: none;
         color: inherit;
     }
-    span{
-        background-color: $couleur_tertiaire;
-        color: green;
-        position:absolute;
-        right: 15px;
-        top: 10px;
-        padding: 0.4em 1em;
-        border-radius: 4px;
-
-    }
     &__title{
         padding: 1em;
     }
@@ -190,6 +180,16 @@ header{
         height: 200px;
         width: 90%;
         margin: 8px auto;
+        position: relative;
+        span{
+            background-color: $couleur_tertiaire;
+            color: green;
+            position:absolute;
+            right: 15px;
+            top: 10px;
+            padding: 0.4em 1em;
+            border-radius: 4px;
+        }
         img{
             height: 65%;
             width: 100%;
@@ -398,9 +398,15 @@ footer{
         }
     }
     .nav__list{
-        width: 50%;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        padding: 1em;
         text-align: center;
         margin: auto;
+        &--elements{
+            width: 25%;
+        }
     }
     .container{
         border-radius: 20px 20px 0 0;

@@ -219,15 +219,6 @@ header a {
   text-decoration: none;
   color: inherit;
 }
-.container span {
-  background-color: #99E2D0;
-  color: green;
-  position: absolute;
-  right: 15px;
-  top: 10px;
-  padding: 0.4em 1em;
-  border-radius: 4px;
-}
 .container__title {
   padding: 1em;
 }
@@ -238,6 +229,16 @@ header a {
   height: 200px;
   width: 90%;
   margin: 8px auto;
+  position: relative;
+}
+.container__block span {
+  background-color: #99E2D0;
+  color: green;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  padding: 0.4em 1em;
+  border-radius: 4px;
 }
 .container__block img {
   height: 65%;
@@ -440,9 +441,15 @@ footer .fas {
   }
 
   .nav__list {
-    width: 50%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
     text-align: center;
     margin: auto;
+  }
+  .nav__list--elements {
+    width: 25%;
   }
 
   .container {
