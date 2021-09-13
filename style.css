@@ -53,7 +53,7 @@
   }
   100% {
     opacity: 0.8;
-    filter: drop-shadow(0 0 0.75rem #b8b8b8);
+    filter: drop-shadow(0 0 0.6em #b8b8b8);
   }
 }
 body {
@@ -191,7 +191,7 @@ header a {
   text-align: center;
   display: flex;
   align-items: center;
-  box-shadow: 4px 3px 7px #d8d7d7;
+  filter: drop-shadow(0 0 0.6em #b8b8b8);
   background-color: #efefef;
   font-size: 12px;
 }
@@ -234,7 +234,7 @@ header a {
 .container__block {
   background-color: white;
   border-radius: 15px;
-  filter: drop-shadow(0 0 0.75rem #b8b8b8);
+  filter: drop-shadow(0 0 0.6em #b8b8b8);
   height: 200px;
   width: 90%;
   margin: 8px auto;
@@ -342,6 +342,7 @@ footer .fas {
   align-items: center;
   height: 70px;
   animation: slideDown 4s;
+  filter: drop-shadow(0 0 0.6em #b8b8b8);
 }
 .categorie__liste:hover > .categorie__liste--box {
   display: block;

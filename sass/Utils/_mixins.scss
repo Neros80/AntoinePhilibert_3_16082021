@@ -1,0 +1,8 @@
+@mixin box-shadow {
+    filter: drop-shadow(0 0 0.6em rgb(184, 184, 184));
+}
+
+@mixin img-center {
+    object-fit: cover;
+    object-position: center;
+}

@@ -1,3 +1,5 @@
+@import './mixins';
+
 @keyframes slideDown {
     from{
         transform: translateY(-50px);
@@ -56,7 +58,7 @@
     }
     100%{
         opacity: 0.8;
-        filter: drop-shadow(0 0 0.75rem #b8b8b8)
+        @include box-shadow;
     }
     
 }

@@ -2,6 +2,7 @@
 /*Utils*/
 @import './Utils/variables';
 @import './Utils/animation';
+@import './Utils/mixins';
 
 body{
    display: flex;
@@ -136,7 +137,7 @@ header{
             text-align: center;
             display: flex;
             align-items: center;
-            box-shadow:4px 3px 7px #d8d7d7;
+            @include box-shadow;
             background-color: #efefef;
             font-size: 12px;
 
@@ -185,15 +186,14 @@ header{
     &__block{
         background-color: white;
         border-radius: 15px;
-        filter: drop-shadow(0 0 0.75rem rgb(184, 184, 184));
+        @include box-shadow;
         height: 200px;
         width: 90%;
         margin: 8px auto;
         img{
             height: 65%;
             width: 100%;
-            object-fit: cover;
-            object-position: center;
+            @include img-center;
             border-radius: 15px 15px 0 0;
         }
         .text{
@@ -266,8 +266,7 @@ footer{
 .img_acc{
     width: 100%;
     height: 250px;
-    object-fit: cover;
-    object-position: center;
+    @include img-center;
 }
 
 .page{
@@ -300,6 +299,7 @@ footer{
         align-items: center;
         height: 70px;
         animation: slideDown 4s;
+        @include box-shadow;
         &:hover> &--box{
             display: block;
             animation: slideRight 500ms ease-in-out;
