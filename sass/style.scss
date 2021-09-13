@@ -103,7 +103,8 @@ header{
                 margin-top:1em;
                 margin-bottom: 1em;
                 &:hover{
-                    opacity: 0.8;
+                    animation: btn-anim 200ms ease-out;
+                    animation-fill-mode: forwards;
                 }
             }
         }

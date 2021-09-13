@@ -47,6 +47,15 @@
     opacity: 0;
   }
 }
+@keyframes btn-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 0.75rem #b8b8b8);
+  }
+}
 body {
   display: flex;
   align-items: center;
@@ -151,7 +160,8 @@ header a {
   margin-bottom: 1em;
 }
 .filtre__reser--btn:hover {
-  opacity: 0.8;
+  animation: btn-anim 200ms ease-out;
+  animation-fill-mode: forwards;
 }
 
 .nav {
