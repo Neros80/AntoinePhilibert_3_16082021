@@ -516,7 +516,8 @@ footer a {
     flex-flow: row wrap;
   }
   .page .categorie__liste {
-    width: 30%;
+    width: 29%;
+    margin: 1em auto;
   }
 }
 
