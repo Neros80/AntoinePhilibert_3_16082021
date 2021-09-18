@@ -101,7 +101,7 @@ header{
                 font-size: 14px;
                 color: white;
                 border:none;
-                margin-top:1em;
+                margin-top:2em;
                 margin-bottom: 1em;
                 &:hover{
                     animation: btn-anim 200ms ease-out;
@@ -202,35 +202,34 @@ header{
             flex-direction: column;
             justify-content: space-between;
             padding: 1em 2em;
-                &__title{
-                    font-size: 15px;
-                    margin: 5px 0;
+            &__title{
+                font-size: 15px;
+                margin: 5px 0;
+            }
+            &__soustext{
+                font-size: 15px;
+                margin: 0;
+            }
+            &__btn{
+                &--base{
+                    position: absolute;
+                    top: 155px;
+                    right: 30px;
+                    font-size: 20px;
+                    z-index: 0;
                 }
-                &__soustext{
-                    font-size: 15px;
-                    margin: 0;
+                &--fav{
+                    position: absolute;
+                    top: 155px;
+                    right: 30px;
+                    font-size: 20px;
+                    z-index: -1;
+                    opacity: 0;
+                    background: -webkit-linear-gradient($couleur_secondaire, $couleur_primaire);
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
-                &__btn{
-                    &--base{
-                        position: absolute;
-                        top: 155px;
-                        right: 30px;
-                        font-size: 20px;
-                        z-index: 0;
-                    }
-                    &--fav{
-                        position: absolute;
-                        top: 155px;
-                        right: 30px;
-                        font-size: 20px;
-                        z-index: -1;
-                        opacity: 0;
-                        background: -webkit-linear-gradient($couleur_secondaire, $couleur_primaire);
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                    }
-
                 &:hover{
                     .text__btn--fav{
                         opacity: 1;
@@ -245,7 +244,6 @@ header{
         }
     }
 }
-
 footer{
     background-color: #484848;
     width: 100%;
@@ -277,10 +275,11 @@ footer{
     display: flex;
     flex-direction: column;
     padding: 1px 0 60px 0;
-    
+    position: relative;
     &__title{
         font-family: $fonts-logo;
         padding: 0 0.5em;
+        font-size: 1.5rem;
     }
     &__categorie{
       padding: 5px 0;
@@ -288,7 +287,38 @@ footer{
       font-size: 1em;
       margin: 5px 1em;
       border-bottom: 3px solid $couleur_tertiaire;
-  }
+    }
+    &__btn{
+        &--base{
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 20px;
+        z-index: 0;
+        }
+        &--fav{
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 20px;
+        z-index: -1;
+        opacity: 0;
+        background: -webkit-linear-gradient($couleur_secondaire, $couleur_primaire);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+        &:hover{
+            .page__btn--fav{
+                opacity: 1;
+                z-index: 0;
+                transition: opacity 500ms;
+            }
+            .page__btn--base{
+                opacity: 0;
+            }
+        }
+    }
 }
 .categorie__liste{
         background-color: white;

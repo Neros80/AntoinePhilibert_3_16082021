@@ -156,7 +156,7 @@ header a {
   font-size: 14px;
   color: white;
   border: none;
-  margin-top: 1em;
+  margin-top: 2em;
   margin-bottom: 1em;
 }
 .filtre__reser--btn:hover {
@@ -321,10 +321,12 @@ footer .fas {
   display: flex;
   flex-direction: column;
   padding: 1px 0 60px 0;
+  position: relative;
 }
 .page__title {
   font-family: "Shrikhand";
   padding: 0 0.5em;
+  font-size: 1.5rem;
 }
 .page__categorie {
   padding: 5px 0;
@@ -332,6 +334,33 @@ footer .fas {
   font-size: 1em;
   margin: 5px 1em;
   border-bottom: 3px solid #99E2D0;
+}
+.page__btn--base {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 20px;
+  z-index: 0;
+}
+.page__btn--fav {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 20px;
+  z-index: -1;
+  opacity: 0;
+  background: -webkit-linear-gradient(#FF79DA, #9656DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.page__btn:hover .page__btn--fav {
+  opacity: 1;
+  z-index: 0;
+  transition: opacity 500ms;
+}
+.page__btn:hover .page__btn--base {
+  opacity: 0;
 }
 
 .categorie__liste {
